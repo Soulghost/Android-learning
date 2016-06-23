@@ -13,7 +13,7 @@
    * [2.2布局管理器](chapter2/section2.md)
    * [2.3基本界面组件](chapter2/section3.md)
    * [2.4高级界面组件](chapter2/section4.md)
-   * [对话框](chapter2/section5.md)
+   * [2.5对话框](chapter2/section5.md)
    * [消息提示](chapter2/section6.md)
    * [菜单](chapter2/section7.md)
 * [事件处理](chapter3/READEME.md)
