@@ -27,6 +27,6 @@
    * [建立、配置和使用Activity](chapter4/section1.md)
    * [Activity的会调机制](chapter4/section2.md)
    * [Activity生命周期](chapter4/section3.md)
-* [使用Intent和IntentFilter进行配置](chapter5/README.md)
+* [5使用Intent和IntentFilter进行配置](chapter5/README.md)
    * [Intent对象详解](chapter5/section1.md)
 
