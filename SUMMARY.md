@@ -46,5 +46,5 @@
 * [7图形与图像处理](chapter7/README.md)
    * [7.1使用简单图片](chapter7/section1.md)
    * [7.3图形特效处理](chapter7/section3.md)
-   * 7.2绘图
+   * [7.2绘图](chapter7/section2.md)
 
