@@ -36,4 +36,5 @@
    * [6.2使用字符串、颜色、尺寸资源](chapter6/section2.md)
    * [6.3数组资源](chapter6/section3.md)
    * [6.4Drawable资源](chapter6/section4.md)
+   * 6.5XML资源
 
