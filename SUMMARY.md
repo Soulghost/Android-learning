@@ -19,5 +19,5 @@
 * [事件处理](chapter3/READEME.md)
    * [Android的事件处理](chapter3/section1.md)
    * [基于监听的事件处理](chapter3/section2.md)
-   * 基于回调的事件处理
+   * [基于回调的事件处理](chapter3/section3.md)
 
