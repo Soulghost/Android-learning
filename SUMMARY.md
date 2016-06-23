@@ -11,5 +11,5 @@
 * [Android应用的界面编程](chapter2/READEME.md)
    * [界面编程与视图组件](chapter2/section1.md)
    * [布局管理器](chapter2/section2.md)
-   * 基本界面组件
+   * [基本界面组件](chapter2/section3.md)
 
