@@ -23,34 +23,46 @@
 *Android会同一系列核心应用程序包一起发布，该应用程序包包括email客户端，SMS短消息程序，日历，地图，浏览器，联系人管理程序等。所有的应用程序都是使用JAVA语言编写的。*
 * **应用程序框架**
 *开发人员也可以完全访问核心应用程序所使用的API框架。该应用程序的架构设计简化了组件的重用；任何一个应用程序都可以发布它的功能块并且任何其它的应用程序都可以使用其所发布的功能块（不过得遵循框架的安全性限制）。同样，该应用程序重用机制也使用户可以方便的替换程序组件。隐藏在每个应用后面的是一系列的服务和系统, 其中包括：*
+ 
+* 
+ *丰富而又可扩展的视图（Views），可以用来构建应用程序， 它包括列表（lists），网格（grids），文本框（text boxes），按钮（buttons）， 甚至可嵌入的web浏览器。* 
 
-2.1.* 丰富而又可扩展的视图（Views），可以用来构建应用程序， 它包括列表（lists），网格（grids），文本框（text boxes），按钮（buttons）， 甚至可嵌入的web浏览器。*
+* 
+*内容提供器（Content Providers）使得应用程序可以访问另一个应用程序的数据（如联系人数据库）， 或者共享它们自己的数据。*
 
-2.*内容提供器（Content Providers）使得应用程序可以访问另一个应用程序的数据（如联系人数据库）， 或者共享它们自己的数据。*
+* 
+*资源管理器（Resource Manager）提供 非代码资源的访问，如本地字符串，图形，和布局文件（ layout files ）。*
 
-3.*资源管理器（Resource Manager）提供 非代码资源的访问，如本地字符串，图形，和布局文件（ layout files ）。*
+* 
+*通知管理器 （Notification Manager） 使得应用程序可以在状态栏中显示自定义的提示信息。*
 
-4.*通知管理器 （Notification Manager） 使得应用程序可以在状态栏中显示自定义的提示信息。*
-
-5.*活动管理器（ Activity Manager） 用来管理应用程序生命周期并提供常用的导航回退功能。*
+* 
+*活动管理器（ Activity Manager） 用来管理应用程序生命周期并提供常用的导航回退功能。*
 * **函数库**
 
-**Bionic系统 C 库 **-* 一个从 BSD 继承来的标准 C 系统函数库（ libc ）， 它是专门为基于 embedded linux 的设备定制的。*
+* 
+*Bionic系统 C 库 - 一个从 BSD 继承来的标准 C 系统函数库（ libc ）， 它是专门为基于 embedded linux 的设备定制的。*
 
-**媒体库** - *基于 PacketVideo OpenCORE；该库支持多种常用的音频、视频格式回放和录制，同时支持静态图像文件。编码格式包括MPEG4, H.264, MP3, AAC, AMR, JPG, PNG 。*
+* 
+*媒体库 - 基于 PacketVideo OpenCORE；该库支持多种常用的音频、视频格式回放和录制，同时支持静态图像文件。编码格式包括MPEG4, H.264, MP3, AAC, AMR, JPG, PNG 。*
 
-**Surface Manager** - *对显示子系统的管理，并且为多个应用程序提 供了2D和3D图层的无缝融合。*
+* 
+*Surface Manager - 对显示子系统的管理，并且为多个应用程序提 供了2D和3D图层的无缝融合。*
 
-**Webkit,LibWebCore** -* 一个最新的web浏览器引擎用，支持Android浏览器和一个可嵌入的web视图。鼎鼎大名的 Apple Safari背后的引擎就是Webkit。*
+* 
+*Webkit,LibWebCore -一个最新的web浏览器引擎用，支持Android浏览器和一个可嵌入的web视图。鼎鼎大名的 Apple Safari背后的引擎就是Webkit。*
 
 
-**SGL **- *底层的2D图形引擎。*
+* 
+*SGL - *底层的2D图形引擎。*
 
-**3D libraries** - *基于OpenGL ES 1.0 APIs实现；该库可以使用硬件 3D加速（如果可用）或者使用高度优化的3D软加速。*
+* 
+*3D libraries- *基于OpenGL ES 1.0 APIs实现；该库可以使用硬件 3D加速（如果可用）或者使用高度优化的3D软加速。*
+* 
+*FreeType -*图（bitmap）和矢量（vector）字体显示。*
 
-**FreeType** -*位图（bitmap）和矢量（vector）字体显示。*
-
-**SQLite** - *一个对于所有应用程序可用，功能强劲的轻型关系型数据库引擎。*
+* 
+SQLite - 一个对于所有应用程序可用，功能强劲的轻型关系型数据库引擎。*
 * **Android运行时**
 *Android运行时由两部分组成：Android核心库集和ART。其中核心库集提供了Java语言核心库所能使用的绝大部分功能，而虚拟机则负责运行Android应用程序。Android5.0以前的Android运行时由Davlik虚拟机和Android核心库集组成，但由于Davlik虚拟机采用了一种被称为JIT（Just-in-time）的解释器进行动态编译并执行，因此导致Android app运行时比较慢；而ART模式则是在用户安装App时进行预编译（Ahead-of-time，简称AOT），这样使程序在运行时可以减少动态编开销，从而提什运行效率。反过来，ART也会占用更多的存储空间，应用安装和系统启动时间会延长不少。*
 * **Linux内核**
