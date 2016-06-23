@@ -30,5 +30,5 @@
 * [5使用Intent和IntentFilter进行配置](chapter5/README.md)
    * [5.1Intent对象详解](chapter5/section1.md)
    * [5.4Intent属性及Intent-filter配置](chapter5/section2.md)
-   * 5.3使用Intent创建Tab页面
+   * [5.3使用Intent创建Tab页面](chapter5/section3.md)
 
