@@ -10,7 +10,7 @@
    * [1.6Android应用的基本组件介绍](chapter1/section6.md)
 * [2Android应用的界面编程](chapter2/READEME.md)
    * [2.1界面编程与视图组件](chapter2/section1.md)
-   * [布局管理器](chapter2/section2.md)
+   * [2.2布局管理器](chapter2/section2.md)
    * [基本界面组件](chapter2/section3.md)
    * [高级界面组件](chapter2/section4.md)
    * [对话框](chapter2/section5.md)
