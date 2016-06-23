@@ -24,4 +24,5 @@
    * [Handler消息传递机制](chapter3/section5.md)
    * [异步任务](chapter3/section6.md)
 * [深入理解Activity](chapter4/README.md)
+   * 建立、配置和使用Activity
 
