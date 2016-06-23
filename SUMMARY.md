@@ -38,4 +38,5 @@
    * [6.4Drawable资源](chapter6/section4.md)
    * [6.5XML资源](chapter6/section5.md)
    * [6.6菜单资源](chapter6/section6.md)
+   * 6.6 布局资源
 
