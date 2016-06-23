@@ -8,5 +8,5 @@
    * [开始第一个Android应用](chapter1/section4.md)
    * [Android应用结构分析](chapter1/section5.md)
    * [Android应用的基本组件介绍](chapter1/section6.md)
-* Android应用的界面编程
+* [Android应用的界面编程](chapter2/READEME.md)
 
