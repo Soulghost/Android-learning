@@ -40,4 +40,5 @@
    * [6.6菜单资源](chapter6/section6.md)
    * [6.7 布局资源](chapter6/section7.md)
    * [6.8样式和主题资源](chapter6/section8.md)
+   * 6.9 属性资源
 
