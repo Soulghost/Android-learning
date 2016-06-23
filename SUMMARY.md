@@ -45,5 +45,5 @@
    * [6.11国际化和资源自适应](chapter6/section11.md)
 * [7图形与图像处理](chapter7/README.md)
    * [7.1使用简单图片](chapter7/section1.md)
-   * 7.2图形特效处理
+   * [7.2图形特效处理](chapter7/section2.md)
 
