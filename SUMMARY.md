@@ -35,5 +35,5 @@
    * [6.1资源的类型及存储方式](chapter6/section1.md)
    * [6.2使用字符串、颜色、尺寸资源](chapter6/section2.md)
    * [6.3数组资源](chapter6/section3.md)
-   * 6.4Drawable资源
+   * [6.4Drawable资源](chapter6/section4.md)
 
