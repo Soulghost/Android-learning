@@ -14,4 +14,5 @@
    * [基本界面组件](chapter2/section3.md)
    * [高级界面组件](chapter2/section4.md)
    * [对话框](chapter2/section5.md)
+   * 消息提示
 
