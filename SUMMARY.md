@@ -33,4 +33,5 @@
    * [5.3使用Intent创建Tab页面](chapter5/section3.md)
 * [6Android 应用的资源](chapter6/README.md)
    * [6.1资源的类型及存储方式](chapter6/section1.md)
+   * 6.2使用字符串、颜色、尺寸资源
 
