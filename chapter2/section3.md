@@ -48,6 +48,207 @@ editText.setText("");
 
 *第3行代码的setText()函数用来设置TextView所显示的内容*
 
+#####Button和ImageButton
+* Button是一种按钮控件，用户能够在该控件上点击，并后引发相应的事件处理函数
+* ImageButton用以实现能够显示图像功能的控件按钮
+（图片）
+
+```
+<Button android:id="@+id/Button01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:text="Button01" >
+</Button>
+<ImageButton android:id="@+id/ImageButton01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+</ImageButton>
+
+```
+  * *定义Button控件的高度、宽度和内容*
+  * *定义ImageButton控件的高度和宽度，但是没定义显示的图像，在后面的代码中进行定义**
+  
+  更改Button和ImageButton内容，引入android.widget.Button和android.widget.ImageButton：
+  
+  ```
+  Button button = (Button)findViewById(R.id.Button01);
+ImageButton imageButton = (ImageButton)findViewById(R.id.ImageButton01);
+button.setText("Button按钮");
+imageButton.setImageResource(R.drawable.download);
+
+  ```
+  
+  *第1行代码用于引用在XML文件中定义的Button控件
+第2行代码用于引用在XML文件中定义的ImageButton控件
+第3行代码将Button的显示内容更改为“Button按钮”
+第4行代码利用setImageResource()函数，将新加入的png文件R.drawable.download传递给ImageButton*
+
+按钮响应点击事件：添加点击事件的监听器：
+
+```
+final TextView textView = (TextView)findViewById(R.id.TextView01);
+button.setOnClickListener(new View.OnClickListener() {
+	public void onClick(View view) {
+		textView.setText("Button按钮");
+	}
+});
+imageButton.setOnClickListener(new View.OnClickListener() {
+	public void onClick(View view) {
+		textView.setText("ImageButton按钮");
+	}
+});
+
+```
+*第2行代码中button对象通过调用setOnClickListener()函数，注册一个点击（Click）事件的监听器View.OnClickListener()
+第3行代码是点击事件的回调函数
+第4行代码将TextView的显示内容更改为“Button按钮”
+*
+**View.OnClickListener()：**
+* View.OnClickListener()是View定义的点击事件的监听器接口，并在接口中仅定义了onClick()函数
+* 当Button从Android界面框架中接收到事件后，首先检查这个事件是否是点击事件，如果是点击事件，同时Button又注册了监听器，则会调用该监听器中的onClick()函数
+* 每个View仅可以注册一个点击事件的监听器，如果使用setOnClickListener()函数注册第二个点击事件的监听器，之前注册的监听器将被自动注销
+* 多个按钮注册到同一个点击事件的监听器上，代码如下：
+
+```
+Button.OnClickListener buttonListener = new Button.OnClickListener(){
+	@Override
+	public void onClick(View v) {
+		switch(v.getId()){
+			case R.id.Button01:
+				textView.setText("Button按钮");
+				return;
+			case R.id.ImageButton01:
+				textView.setText("ImageButton按钮");
+				return;
+		}	
+	   }};
+     button.setOnClickListener(buttonListener);
+     imageButton.setOnClickListener(buttonListener);
+
+```
+*第1行至第12行代码定义了一个名为buttonListener的点击事件监听器
+第13行代码将该监听器注册到Button上
+第14行代码将该监听器注册到ImageButton上*
+
+ #####CheckBox和RadioButton
+  * CheckBox是一个同时可以选择多个选项的控件
+  * RadioButton则是仅可以选择一个选项的控件
+  * RadioGroup是RadioButton的承载体，程序运行时不可见，应用程序中可能包含一个或多个RadioGroup
+  * 一个RadioGroup包含多个RadioButton，在每个RadioGroup中，用户仅能够选择其中一个RadioButton
+
+CheckBox DEMO在XML文件：
+
+```
+ <TextView android:id="@+id/TextView01“
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:text="@string/hello"/>
+	<CheckBox android:id="@+id/CheckBox01"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="CheckBox01" >
+	</CheckBox>
+	<CheckBox android:id="@+id/CheckBox02" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="CheckBox02" >
+	 </CheckBox>
+
+```
+RadioBox Demo在XML文件：
+
+```
+15<RadioGroup android:id="@+id/RadioGroup01" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+		<RadioButton android:id="@+id/RadioButton01" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content“
+			android:text="RadioButton01" >
+		</RadioButton>
+		<RadioButton android:id="@+id/RadioButton02" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content“
+			android:text="RadioButton02" >
+		</RadioButton>
+	</RadioGroup>
+
+```
+*第15行<RadioGroup>标签声明了一个RadioGroup*
+ *在第18行和第23行分别声明了两个RadioButton，这两个RadioButton是RadioGroup的子元素*
+
+引用CheckBox和RadioButton的方法参考下面的代码：
+
+```
+CheckBox checkBox1= (CheckBox)findViewById(R.id.CheckBox01);
+RadioButton radioButton1 =(RadioButton)findViewById(R.id.RadioButton01);
+
+```
+CheckBox设置点击事件监听器的简要代码：
+
+```
+CheckBox.OnClickListener checkboxListener = new CheckBox.OnClickListener(){
+	@Override
+	public void onClick(View v) {
+	  //过程代码
+	}};
+checkBox1.setOnClickListener(checkboxListener);
+checkBox2.setOnClickListener(checkboxListener);
+
+```
+*与Button设置点击事件监听器中介绍的方法相似，唯一不同在于将Button.OnClickListener换成了CheckBox.OnClickListener*
+
+RadioButton设置点击事件监听器的方法：
+
+```
+RadioButton.OnClickListener radioButtonListener = new RadioButton.OnClickListener(){
+	@Override
+	public void onClick(View v) {
+	  //过程代码
+	}}; 	
+radioButton1.setOnClickListener(radioButtonListener);
+radioButton2.setOnClickListener(radioButtonListener);
+
+```
+#####Spinner
+* Spinner是一种能够从多个选项中选一选项的控件，类似于桌面程序的组合框（ComboBox），但没有组合框的下拉菜单，而是使用浮动菜单为用户提供选择
+* SpinnerDemo在XML文件中的代码：
+
+```
+<TextView  android:id="@+id/TextView01"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="@string/hello"/>
+5     <Spinner android:id="@+id/Spinner01" 
+	android:layout_width="300dip" 
+	android:layout_height="wrap_content">
+</Spinner>
+
+
+```
+*第5行使用<Spinner>标签声明了一个Spinner控件
+第5行代码中指定了该控件的宽度为300dip
+*
+* 在SpinnerDemo.java文件中，定义一个ArrayAdapter适配器，在ArrayAdapter中添加需要在Spinner中可以选择的内容，需要在代码中引入android.widget.ArrayAdapter和android.widget.Spinner
+
+```
+Spinner spinner = (Spinner) findViewById(R.id.Spinner01);   
+List<String> list  = new ArrayList<String>();
+list .add("Spinner子项1");
+list .add("Spinner子项2");
+list .add("Spinner子项3");
+ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, 		android.R.layout.simple_spinner_item, list );
+adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+spinner.setAdapter(adapter);
+
+```
+*第2行代码建立了一个字符串数组列表（ArrayList），这种数组列表可以根据需要进行增减
+<String>表示数组列表中保存的是字符串类型的数据
+在代码的第3、4、6行中，使用add()函数分别向数组列表中添加3个字符串
+第6行代码建立了一个ArrayAdapter的数组适配器，数组适配器能够将界面控件和底层数据绑定在一起
+第7行代码设定了Spinner的浮动菜单的显示方式，其中，android.R.layout.simple_spinner_dropdown_item是Android系统内置的一种浮动菜单
+第8行代码实现绑定过程，所有ArrayList中的数据，将显示在Spinner的浮动菜单中*
+
 
 
 
