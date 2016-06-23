@@ -43,6 +43,6 @@
    * [6.9 属性资源](chapter6/section9.md)
    * [6.10原始资源](chapter6/section10.md)
    * [6.11国际化和资源自适应](chapter6/section11.md)
-* 7图形与图像处理
+* [7图形与图像处理](chapter7/README.md)
    * [7.1使用简单图片](chapter7/section1.md)
 
