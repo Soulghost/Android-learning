@@ -54,15 +54,15 @@
 
 
 * 
-*SGL - *底层的2D图形引擎。*
+*SGL - 底层的2D图形引擎。*
 
 * 
-*3D libraries- *基于OpenGL ES 1.0 APIs实现；该库可以使用硬件 3D加速（如果可用）或者使用高度优化的3D软加速。*
+*3D libraries- 基于OpenGL ES 1.0 APIs实现；该库可以使用硬件 3D加速（如果可用）或者使用高度优化的3D软加速。*
 * 
-*FreeType -*图（bitmap）和矢量（vector）字体显示。*
+*FreeType -图（bitmap）和矢量（vector）字体显示。*
 
 * 
-SQLite - 一个对于所有应用程序可用，功能强劲的轻型关系型数据库引擎。*
+*SQLite - 一个对于所有应用程序可用，功能强劲的轻型关系型数据库引擎。*
 * **Android运行时**
 *Android运行时由两部分组成：Android核心库集和ART。其中核心库集提供了Java语言核心库所能使用的绝大部分功能，而虚拟机则负责运行Android应用程序。Android5.0以前的Android运行时由Davlik虚拟机和Android核心库集组成，但由于Davlik虚拟机采用了一种被称为JIT（Just-in-time）的解释器进行动态编译并执行，因此导致Android app运行时比较慢；而ART模式则是在用户安装App时进行预编译（Ahead-of-time，简称AOT），这样使程序在运行时可以减少动态编开销，从而提什运行效率。反过来，ART也会占用更多的存储空间，应用安装和系统启动时间会延长不少。*
 * **Linux内核**
