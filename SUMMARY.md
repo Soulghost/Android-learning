@@ -22,5 +22,5 @@
    * [基于回调的事件处理](chapter3/section3.md)
    * [响应系统设置的事件](chapter3/section4.md)
    * [Handler消息传递机制](chapter3/section5.md)
-   * 异步任务
+   * [异步任务](chapter3/section6.md)
 
