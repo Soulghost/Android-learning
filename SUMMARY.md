@@ -4,5 +4,5 @@
 * [Android 应用与开发环境](chapter1/README.md)
    * [Android的发展与历史](chapter1/section1.md)
    * [搭建Android开发环境](chapter1/section2.md)
-   * Android常用工具的用法
+   * [Android常用工具的用法](chapter1/section3.md)
 
