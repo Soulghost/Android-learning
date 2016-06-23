@@ -39,4 +39,5 @@
    * [6.5XML资源](chapter6/section5.md)
    * [6.6菜单资源](chapter6/section6.md)
    * [6.7 布局资源](chapter6/section7.md)
+   * 6.8样式和主题资源
 
