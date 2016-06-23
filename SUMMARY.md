@@ -48,5 +48,5 @@
    * [7.2绘图](chapter7/section2.md)
    * [7.3图形特效处理](chapter7/section3.md)
    * [7.4逐帧动画](chapter7/section4.md)
-   * 7.6补间动画
+   * [7.6补间动画](chapter7/section7.md)
 
