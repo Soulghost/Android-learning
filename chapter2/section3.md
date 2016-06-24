@@ -210,44 +210,7 @@ radioButton1.setOnClickListener(radioButtonListener);
 radioButton2.setOnClickListener(radioButtonListener);
 
 ```
-#####Spinner
-* Spinner是一种能够从多个选项中选一选项的控件，类似于桌面程序的组合框（ComboBox），但没有组合框的下拉菜单，而是使用浮动菜单为用户提供选择
-* SpinnerDemo在XML文件中的代码：
 
-```
-<TextView  android:id="@+id/TextView01"
-    	android:layout_width="fill_parent" 
-    	android:layout_height="wrap_content" 
-    	android:text="@string/hello"/>
-5     <Spinner android:id="@+id/Spinner01" 
-	android:layout_width="300dip" 
-	android:layout_height="wrap_content">
-</Spinner>
-
-
-```
-*第5行使用<Spinner>标签声明了一个Spinner控件
-第5行代码中指定了该控件的宽度为300dip
-*
-* 在SpinnerDemo.java文件中，定义一个ArrayAdapter适配器，在ArrayAdapter中添加需要在Spinner中可以选择的内容，需要在代码中引入android.widget.ArrayAdapter和android.widget.Spinner
-
-```
-Spinner spinner = (Spinner) findViewById(R.id.Spinner01);   
-List<String> list  = new ArrayList<String>();
-list .add("Spinner子项1");
-list .add("Spinner子项2");
-list .add("Spinner子项3");
-ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, 		android.R.layout.simple_spinner_item, list );
-adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-spinner.setAdapter(adapter);
-
-```
-*第2行代码建立了一个字符串数组列表（ArrayList），这种数组列表可以根据需要进行增减
-<String>表示数组列表中保存的是字符串类型的数据
-在代码的第3、4、6行中，使用add()函数分别向数组列表中添加3个字符串
-第6行代码建立了一个ArrayAdapter的数组适配器，数组适配器能够将界面控件和底层数据绑定在一起
-第7行代码设定了Spinner的浮动菜单的显示方式，其中，android.R.layout.simple_spinner_dropdown_item是Android系统内置的一种浮动菜单
-第8行代码实现绑定过程，所有ArrayList中的数据，将显示在Spinner的浮动菜单中*
 
 
 
