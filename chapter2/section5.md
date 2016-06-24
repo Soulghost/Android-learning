@@ -25,11 +25,20 @@
 ###提示对话框（AlertDialog）
 提示对话框主要用于“是”、“否”、“列表选择”等类型的提示。
 ![](24.jpg)
+* 初次使用对话框时可以创建AlertDialog.Builder类的对象实例，然后通过AlertDialog.Builder类的show方法显示对话框，或通过Builder类的create方法返回AlertDialog对象，再通过AlertDialog类的show方法显示对话框。
+
 * 由于提示对话框的构造方法被声明为protected方法，因此，不能直接使用new关键字来创建AlertDialog的对象实例。为了创建AlertDialog对象，需要使用Builder类，该类是在AlertDialog中定义的一个内嵌类创建AlertDialog.Builder类的对象实例，然后通过AlertDialog.Builder类的show方法显示对话框，或通过Builder类的create方法返回AlertDialog对象，再通过AlertDialog类的show方法显示对话框。
 * 如果只是简单显示一个对话框，这个对话框并不起任何作用。在对话框上既没有文字，也没有按钮，而且负责显示对话框的Activity会失去焦点，除非按手机上的取消键，否则无法关闭这个对话框。为了给对话框加上文字和按钮，可以在调用show方法之前，调用AlertDialog.Builder类中的其它方法为对话框设置更多信息，例如：setTitle方法设置对话框标题，setIcon方法设置对话框左上角显示的图标。
 * 提示对话框能够同时显示按钮、文字和图标。
 * 使用提示对话框创建的按钮最多只能有3个。
 （图片。。。。）
+
+###简单列表对话框
+* 通过AlertDialog.Builder类的setItems方法可以创建简单的列表对话框。实际上，这种对话框相当于将ListView放在对话框上，然后在ListView中添加若干文本。
+* 列表对话框是垂直的列表型对话框
+ * 支持单选框和复选框
+ * 
+
 
 
 
