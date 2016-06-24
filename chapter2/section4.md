@@ -101,6 +101,7 @@ listView.setOnItemClickListener(listViewListener);
 * *第1行的AdapterView.OnItemClickListener是ListView子项的点击事件监听器，同样是一个接口，需要实现onItemClick()函数。在ListView子项被选择后，onItemClick()函数将被调用*
 * *第3行的onItemClick()函数中一共有四个参数，参数0表示适配器控件，就是ListView；参数1表示适配器内部的控件，是ListView中的子项；参数2表示适配器内部的控件，也就是子项的位置；参数3表示子项的行号*
 * *第7行代码是ListView指定刚刚声明的监听器*
+![](18.png)
 
 
 ##TabHost
@@ -116,10 +117,88 @@ listView.setOnItemClickListener(listViewListener);
 * 每个分页建立一个XML文件，用以编辑和保存分页的界面布局，使用的方法与设计普通用户界面没有什么区别
 * 建立一个“TabDemo”程序，包含三个XML文件，分别为tab1.xml、tab2.xml和tab3.xml，这3个文件分别使用线性布局、相对布局和绝对布局，并将布局的ID分别定义为layout01、layout02和layout03
 
+![](20.png)
+ tab1.xml文件代码
+ 
+ ```
+ <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id = "@+id/layout01"
+  ……
+  ……
+</LinearLayout>
 
+ ```
+ tab2.xml文件代码
  
+ ```
+ <?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/layout02"
+  ……
+  ……
+</AbsoluteLayout>
+
+ ```
+ tab3.xml文件代码
  
+ ```
+ <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/layout03" 
+  ……
+  ……
+</RelativeLayout>
+
+ ```
+  在TabDemo.java文件中键入下面的代码，创建Tab标签页，并建立子页与界面布局直接的关联关系
+  
+  ```
+  package edu.hrbeu.TabDemo;
  
+import android.app.TabActivity;
+import android.os.Bundle;
+import android.widget.TabHost;
+import android.view.LayoutInflater;
+ 
+8     public class TabDemo extends TabActivity {
+	@Override
+public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);        
+12		TabHost tabHost = getTabHost();
+		LayoutInflater.from(this).inflate(R.layout.tab1, 				tabHost.getTabContentView(),true);
+		LayoutInflater.from(this).inflate(R.layout.tab2, 				tabHost.getTabContentView(),true);
+		LayoutInflater.from(this).inflate(R.layout.tab3, 				tabHost.getTabContentView(),true);
+16		tabHost.addTab(tabHost.newTabSpec("TAB1")
+17			.setIndicator("线性布局").setContent(R.id.layout01));
+		tabHost.addTab(tabHost.newTabSpec("TAB2")
+			.setIndicator("绝对布局").setContent(R.id.layout02));
+		tabHost.addTab(tabHost.newTabSpec("TAB3")
+			.setIndicator("相对布局").setContent(R.id.layout03));
+            }
+ }
+
+  ```
+ * *第8行代码的声明TabDemo类继承与TabActivity，与以往继承Activity不同，TabActivity支持内嵌多个Activity或View*
+ 
+ * *第12行代码通过getTabHost()函数获得了Tab标签页的容器，用以承载可以点击的Tab标签和分页的界面布局。*
+
+ * *第13行代码通过LayoutInflater将tab1.xml文件中的布局转换为Tab标签页可以使用的View对象*
+ * *第16行代码使用addTab()函数添加了第1个分页，tabHost.newTabSpec("TAB1")表明在第12行代码中建立的tabHost上，添加一个标识为TAB1的Tab分页*
+ * *第17行代码使用setIndicator()函数设定分页显示的标题，使用setContent()函数设定分页所关联的界面布局*
+
+TabDemo示例的运行结果如图：
+![](21.png)![](22.png)
+* 在使用Tab标签页时，可以将不同分页的界面布局保存在不同的XML文件中，也可以将所有分页的布局保存在同一个XML文件中
+ * 第一种方法有利于在开发环境中进行可视化设计，并且不同分页的界面布局在不同的文件中更加易于管理
+ * 第二种方法则可以产生较少的XML文件，同时编码时的代码也会更加简洁
+
+
+
+
+
+
+
+
+
+
 
 
 
