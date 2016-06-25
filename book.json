@@ -1,18 +1,6 @@
 {
     "plugins": [
-        "duoshuo",
-        "disqus",
-       
-      
+        "sidebar-ad"
     ],
-    "pluginsConfig": {
-        "duoshuo": {
-            "short_name": "jyoung.duoshuo.com",
-            "theme": "default"
-        },
-        "disqus": {
-            "shortName": "jyoung311.disqus.com",
-            "useIdentifier": false
-        }
-    }
+    "pluginsConfig": {}
 }
