@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
+<title>函数传参</title>
 </head>
 <body>
 	<!-- 多说评论框 start -->
@@ -22,6 +22,7 @@ var duoshuoQuery = {short_name:"jyoung"};
 		 || document.getElementsByTagName('body')[0]).appendChild(ds);
 	})();
 	</script>
+<!-- 多说公共JS代码 end -->
 
 </body>
 </html>
