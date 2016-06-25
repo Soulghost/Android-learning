@@ -68,5 +68,5 @@
    * [10.5音频管理器](chapter10/section5.md)
    * [10.6振动器](chapter10/section6.md)
    * [10.7手机闹铃服务](chapter10/section7.md)
-   * 10.8接收广播信息
+   * [10.8接收广播信息](chapter10/section8.md)
 
