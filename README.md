@@ -1,5 +1,6 @@
 # Android-learning
 使用gitbook整理Android讲义
+<!DOCTYPE HTML>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
