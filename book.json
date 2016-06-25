@@ -2,7 +2,7 @@
     "plugins": [
         "duoshuo",
         "disqus",
-        "advanced-emoji",
+       
         "splitter"
     ],
     "pluginsConfig": {
@@ -13,9 +13,6 @@
         "disqus": {
             "shortName": "jyoung311.disqus.com",
             "useIdentifier": false
-        },
-        "advanced-emoji": {
-            "embedEmojis": false
         }
     }
 }
