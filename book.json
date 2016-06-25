@@ -2,7 +2,8 @@
     "plugins": [
         "duoshuo",
         "disqus",
-        "advanced-emoji"
+        "advanced-emoji",
+        "splitter"
     ],
     "pluginsConfig": {
         "duoshuo": {
