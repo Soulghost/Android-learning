@@ -1,7 +1,8 @@
 {
     "plugins": [
         "duoshuo",
-        "-comment"
+        "-comment",
+        "donate"
     ],
     "pluginsConfig": {
         "duoshuo": {
