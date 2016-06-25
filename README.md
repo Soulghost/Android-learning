@@ -1,5 +1,7 @@
 # Android-learning
 使用gitbook整理Android讲义
+![](cover.jpg)
+
 
 <!-- 多说评论框 start -->
 <div class="ds-thread" data-thread-key="-android-learning-content-index.html" data-title="简介" data-url="https://jyoung233.gitbooks.io/android-learning/content/"></div>
