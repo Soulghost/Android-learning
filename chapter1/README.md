@@ -16,7 +16,9 @@ function toggleDuoshuoComments(container){
 </head>
 <body>
 	<a href="javascript:void(0);" onclick="toggleDuoshuoComments('#comment-box');">展开评论</a>
-<div id="comment-box" ></div>
+<div id="comment-box" >
+ alert("你好！");
+</div>
 </body>
 </html>
 
