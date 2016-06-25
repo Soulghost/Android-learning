@@ -1,7 +1,8 @@
 {
     "plugins": [
         "duoshuo",
-        "disqus"
+        "disqus",
+        "advanced-emoji"
     ],
     "pluginsConfig": {
         "duoshuo": {
