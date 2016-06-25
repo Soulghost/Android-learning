@@ -1,10 +1,10 @@
 {
     "plugins": [
-        "duoshuo",
+        "-duoshuo",
         "-comment"
     ],
     "pluginsConfig": {
-        "duoshuo": {
+        "-duoshuo": {
             "short_name": "jyoung.duoshuo.com",
             "theme": "default"
         }
