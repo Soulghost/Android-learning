@@ -7,7 +7,7 @@
 </head>
 <body>
 	<!-- 多说评论框 start -->
-	<div class="ds-thread"  data-thread-key="this" data-url="https://jyoung233.gitbooks.io/android-learning/content/"></div>
+	<div class="ds-thread"  data-thread-key="1" data-url="https://jyoung233.gitbooks.io/android-learning/content/"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
