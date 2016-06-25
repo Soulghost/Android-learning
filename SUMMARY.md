@@ -72,4 +72,5 @@
    * [10.9接收系统广播信息](chapter10/section9.md)
 * [11多媒体应用开发](chapter11/README.md)
    * [11.1音频与视频的播放](chapter11/section1.md)
+   * 11.2使用MediaRecorder录制音频
 
