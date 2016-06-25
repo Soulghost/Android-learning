@@ -54,4 +54,5 @@
    * [8.1使用SharedPreferences](chapter8/section1.md)
    * [8.2SQLite数据库](chapter8/section2.md)
    * [8.3手势](chapter8/section3.md)
+   * 8.4自动朗读
 
