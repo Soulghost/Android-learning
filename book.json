@@ -4,9 +4,6 @@
         "splitter"
     ],
     "pluginsConfig": {
-    "duoshuo": {
-            "short_name": "jyoung.duoshuo.com",
-            "theme": "default"
-        }
+    
     }
 }
