@@ -73,5 +73,5 @@
 * [11多媒体应用开发](chapter11/README.md)
    * [11.1音频与视频的播放](chapter11/section1.md)
    * [11.2使用MediaRecorder录制音频](chapter11/section2.md)
-   * 11.3控制摄像头拍照
+   * [11.3控制摄像头拍照](chapter11/section3.md)
 
