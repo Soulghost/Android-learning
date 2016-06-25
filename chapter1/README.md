@@ -4,7 +4,6 @@
 <script>var duoshuoQuery = {short_name:"jyoung"};</script>
 <script src="http://static.duoshuo.com/embed.js"></script>
 <script type="text/javascript">
-
 function toggleDuoshuoComments(container){
     var el = document.createElement('div');//该div不需要设置class="ds-thread"
     el.setAttribute('data-thread-key', '1');//必选参数
