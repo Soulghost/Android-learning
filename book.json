@@ -1,10 +1,10 @@
 {
     "plugins": [
         "splitter",
-        "duoshuo"
+        "-duoshuo"
     ],
     "pluginsConfig": {
-    "duoshuo": {
+        "-duoshuo": {
             "short_name": "jyoung.duoshuo.com",
             "theme": "default"
         }
