@@ -2,20 +2,24 @@
 使用gitbook整理Android学习资料
 <html>
 <head>
-	<script type="text/javascript">
-var duoshuoQuery = {short_name:"jyoung"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
+<script 
+<script>var duoshuoQuery = {short_name:"jyoung"};</script>
+<script src="http://static.duoshuo.com/embed.js"></script>
+<script type="text/javascript">
+function toggleDuoshuoComments(container){
+    var el = document.createElement('div');//该div不需要设置class="ds-thread"
+    el.setAttribute('data-thread-key', '1');//必选参数
+    el.setAttribute('data-url', 'https://jyoung233.gitbooks.io/android-learning/content/');//必选参数
+  
+    DUOSHUO.EmbedThread(el);
+    jQuery(container).append(el);
+}
+</script>
 </head>
 <body>
-	<div class="ds-thread" data-thread-key="1" data-title="简介" data-url="https://jyoung233.gitbooks.io/android-learning/content/">
-	</div>
+	<a href="javascript:void(0);" onclick="toggleDuoshuoComments('#comment-box');">展开评论</a>
+<div id="comment-box" >
+
+</div>
 </body>
 </html>
