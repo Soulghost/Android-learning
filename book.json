@@ -3,5 +3,10 @@
         "splitter",
         "duoshuo"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+    "duoshuo": {
+            "short_name": "jyoung.duoshuo.com",
+            "theme": "default"
+        }
+    }
 }
