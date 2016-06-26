@@ -22,6 +22,21 @@
 
 * 创建Bitmap对象方法：
  * BitmapFactory（android.graphics.BitmapFactory）：一个工具类，提供了多种方法，这些方法可用于从不同的数据源来解析、创建 Bitmap对象。主要方法如下：
+![](28.jpg)
+* 回收Bitmap对象方法：
+ * 系统不停地解析、创建对象，可能由于前面创建的Bitmap所占用内存还没有回收，而导致程序运行时引发OutOfMemory错误。
+ * Android为Bitmap提供了两个方法来判断它是否已会后，以及强制Bitmap回收自己。
+ * **Boolean isRecycled()：返回该 Bitmap对象是否已回收**
+ * **Void recycle()：强制一个Bitmap对象回收自己**
+
+* Bitmap(android.graphics.Bitmap)提供的创建新的Bitmap方法：
+ * static Bitmap  createBitmap(Bitmap source, int x, int y, int width, int height) :从源位图source的指定左边点(x,y)开始，从中挖取一块出来，创建新的Bitmap对象.
+ * static Bitmap  createScaledBitmap(Bitmap src, int dstWidth, int dstHeight, boolean filter) :对源位图进行缩放，缩放成宽dstWidth，高dstHeight的新位图。filter如果为true，源图要被过滤。
+ * static createBitmap(int width,int height,Bitmap.Config config):创建一个宽width、高height的新位图。
+ * static Bitmap  createBitmap(Bitmap source, int x, int y, int width, int height, Matrix m, boolean filter) :从源位图source的指定左边点(x,y)开始，从中挖取一块出来，创建新的Bitmap对象.并按Matrix指定的规则进行变换。
+
+
+
 
  
 
