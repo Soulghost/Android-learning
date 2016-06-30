@@ -46,6 +46,13 @@ Android项目的全局描述文件，说明了应用的名称、图标及所包�
 ```
 如要使用该组件的功能，则必须通过<uses-permission…/>声明该权限
 
+###自动生成的R.java
+* R.java文件是由aapt工具根据应用中的资源文件自动生成的，写代码时不需要修改该文件，可将R.java理解成Android应用的资源字典。aapt生成R.java文件的规则：
+ * 每类资源对应R类的一个内部类。比如所有节目布局资源对应于layout内部类；所有字符串资源对应于string内部类；所有标识符资源对应于id内部类。
+ * 每个具体的资源项对应于内部类的一个public static final int类型的Field。比如HelloWorld程序中界面布局中用到了textview1、button1标识符，R.id类里就包含了这两个Field。
+
+
+
 
 
 
