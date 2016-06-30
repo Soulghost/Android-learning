@@ -28,3 +28,16 @@ Android已经解决了前两个问题，使用XML文件描述用户界面；资�
 * ViewGroup功能：一个是承载界面布局，另一个是承载具有原子特性的重构模块
 ![](10.png)
 #####Android系统会依据视图树的结构从上至下绘制每一个界面元素。每个元素负责对自身的绘制，如果元素包含子元素，该元素会通知其下所有子元素进行绘制
+
+###UI界面控制
+* 使用XML布局文件控制UI界面
+ * Android推荐使用XML布局文件控制视图，可将视图控制逻辑从Java代码剥离，体现MVC原则。
+ * Java代码通过setContentView(R.layout.<资源文件名>)在Activity显示视图；通过findViewById(R.id.[android.id属性值])访问指定UI组件
+* 开发者也可以像开发Swing应用一样，完全抛弃XML文件，完全通过Java代码控制UI界面。实例：codes\02\2.1\CodeView
+* 使用XML布局文件和Java代码混合控制UI界面
+ * XML方式方便快捷，有失灵活；Java方式繁琐，不利于解耦
+ * 可采用混合方式控制UI界面：变化小、行为比较固定的组件放在XML布局文件中管理，而变化大、行为控制比较复杂的组件通过Java控制。实例： codes\02\2.1\MixView
+
+
+
+
