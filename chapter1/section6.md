@@ -1,6 +1,16 @@
 # Android应用的基本组件介绍
 
 ---
+###Activity
+* Activity是Android应用中负责与用户交互的组件，大致可将它想象成Swing编程中的JFrame控件。View组件是所有UI控件、容器控件的基类，View组件需放到容器组件或Activity将它显示出来，调用Activity的setContentView()方法即可。
+ * setContentView(layout); setContentView(R.layout.main)
+* 一个Android应用一般包含多个Activity，多个Activity组成Activity栈，当前活动的Activity位于栈顶
+* Activity包含了一个setTheme(int resid)方法来设置窗口风格，如可设置窗口不显示标题、以对话框的形式显示窗口
+
+
+
+
+
 ###Service
 * Service与Activity功能类似，区别在于Service通常位于后台运行，一般不需要与用户交互，因此Service组件没有用户界面
 * 与Activity组件需要继承Activity基类相似，自定义Service组件需要继承Service基类。
