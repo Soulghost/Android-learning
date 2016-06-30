@@ -38,6 +38,16 @@ Android已经解决了前两个问题，使用XML文件描述用户界面；资�
  * XML方式方便快捷，有失灵活；Java方式繁琐，不利于解耦
  * 可采用混合方式控制UI界面：变化小、行为比较固定的组件放在XML布局文件中管理，而变化大、行为控制比较复杂的组件通过Java控制。实例： codes\02\2.1\MixView
 
+###开发自定义View
+ 当Android系统提供的UI组件不满足项目需要时，可通过继承View来派生自定义组件
+ * 当Android系统提供的UI组件不满足项目需要时，可通过继承View来派生自定义组件
+ * 然后重写View类的一个或多个方法
+ * 可被重写的方法包括：构造器、onFinishInflate()、onMeasure()、onLayout()、onSizeChanged()、onDraw()、onKeyDown()、onKeyUp()、onTrackballEvent()、onTouchEvent()、onWindowFocusChanged()、onAttachedToWindow()、onDetachedFromWindow()、onWindowVisibilityChanged()
+ * 实例：codes\02\2.1\CustomView
+
+
+
+
 
 
 
