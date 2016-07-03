@@ -78,5 +78,5 @@
    * [12.13D图形与3D开发的基本知识](chapter12/section1.md)
    * [12.2OpenGL与OpenGL ES简介](chapter12/section2.md)
    * [12.3绘制2D图形](chapter12/section3.md)
-   * 12.4 绘制3D图形
+   * [12.4 绘制3D图形](chapter12/section4.md)
 
