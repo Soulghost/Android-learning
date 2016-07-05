@@ -87,4 +87,5 @@
    * [12.5使用Web Service进行网络编程](chapter13/section5.md)
 * [14管理Android手机桌面](chapter14/README.md)
    * [14.1管理手机桌面](chapter14/section1.md)
+   * 14.2改变手机壁纸
 
