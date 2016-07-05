@@ -81,5 +81,5 @@
    * [12.4 绘制3D图形](chapter12/section4.md)
 * [13Android网络应用](chapter13/README.md)
    * [12.1基于TCP协议的网络通信](chapter13/section1.md)
-   * 12.2使用URL访问网络资源
+   * [12.2使用URL访问网络资源](chapter13/section2.md)
 
