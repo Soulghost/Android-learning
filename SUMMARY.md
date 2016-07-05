@@ -89,5 +89,5 @@
    * [14.1管理手机桌面](chapter14/section1.md)
    * [14.2改变手机壁纸](chapter14/section2.md)
    * [14.3桌面快捷方式](chapter14/section3.md)
-   * 14.4管理桌面小控件
+   * [14.4管理桌面小控件](chapter14/section4.md)
 
