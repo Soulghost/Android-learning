@@ -85,6 +85,6 @@
    * [12.3使用HTTP访问网络](chapter13/section3.md)
    * [12.4使用WebView视图](chapter13/section4.md)
    * [12.5使用Web Service进行网络编程](chapter13/section5.md)
-* 14管理Android手机桌面
+* [14管理Android手机桌面](chapter14/README.md)
    * 14.1管理手机桌面
 
