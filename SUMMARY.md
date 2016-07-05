@@ -92,5 +92,5 @@
    * [14.4管理桌面小控件](chapter14/section4.md)
    * [14.5实时文件夹](chapter14/section5.md)
 * [15传感器应用开发](chapter15/README.md)
-   * 15.1利用Android的传感器
+   * [15.1利用Android的传感器](chapter15/section1.md)
 
