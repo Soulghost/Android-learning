@@ -100,5 +100,5 @@
    * [16.2获取LocationProvider](chapter16/section2.md)
    * [16.3获取定位信息](chapter16/section3.md)
    * [16.4临近警告](chapter16/section4.md)
-* 17地图应用开发
+* [17地图应用开发](chapter17.md)
 
