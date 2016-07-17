@@ -95,4 +95,5 @@
    * [15.1利用Android的传感器](chapter15/section1.md)
    * [15.2Android的常用传感器](chapter15/section2.md)
    * [15.3传感器应用案例](chapter15/section3.md)
+* 16GPS应用开发
 
