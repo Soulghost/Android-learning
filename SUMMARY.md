@@ -97,5 +97,5 @@
    * [15.3传感器应用案例](chapter15/section3.md)
 * [16GPS应用开发](chapter16/REDME.md)
    * [16.1支持GPS的核心API](chapter16/section1.md)
-   * 16.2获取LocationProvider
+   * [16.2获取LocationProvider](chapter16/section2.md)
 
