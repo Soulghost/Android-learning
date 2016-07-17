@@ -93,5 +93,5 @@
    * [14.5实时文件夹](chapter14/section5.md)
 * [15传感器应用开发](chapter15/README.md)
    * [15.1利用Android的传感器](chapter15/section1.md)
-   * 15.2Android的常用传感器
+   * [15.2Android的常用传感器](chapter15/section2.md)
 
